@@ -1,0 +1,148 @@
+.site_global {
+    width: 900px;
+    height: 1500px;
+    margin: 0 auto;
+    background-color: bisque;
+}
+
+/* Header */
+
+.header {
+    flex-direction: row;
+    padding: 15px;
+    height: 150px;
+}
+
+.nom_site h1 {
+    color: red;
+    font-size: 50px;
+}
+
+.page_du_site {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: right;
+    justify-content: baseline;
+}
+
+
+.page_du_site h2 {
+    font-size: 16px;
+    margin: 0;
+
+}
+
+/* Milieu */
+
+.milieu_du_site {
+    background-color: lightyellow;
+    padding: 30px;
+    height: 450px;
+}
+
+.contenu_accueil {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightblue;
+    margin-top: 20px;
+    height: 400px;
+}
+
+.texte_accueil {
+    width: 450px;
+}
+
+.texte_accueil h2 {
+    color: red;
+    font-size: 30px;
+}
+
+.texte_accueil h3 {
+    color: purple;
+    font-size: 22px;
+}
+
+.text1 {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.image_accueil img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.bouton {
+    background-color: hotpink;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.bouton:hover {
+    background-color: red;
+}
+
+/* Bas du site */
+
+.bas_du_site {
+    background-color: lightpink;
+    padding: 30px;
+    height: 350px;
+}
+
+.bas_du_site h2 {
+    color: darkblue;
+    font-size: 28px;
+}
+
+.les_blocs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bloc1 {
+    width: 275px;
+    padding: 20px;
+    background-color: lightgreen;
+}
+
+.bloc2 {
+    width: 275px;
+    padding: 20px;
+    background-color: lightcoral;
+}
+
+.bloc3 {
+    width: 275px;
+    padding: 20px;
+    background-color: plum;
+}
+
+.les_blocs h3 {
+    font-size: 22px;
+}
+
+.les_blocs p {
+    font-size: 16px;
+}
+
+.les_blocs a {
+    color: blue;
+}
+
+.timer {
+    width: 100px;
+    height: 100px;
+}
+
+.timer2 {
+    font-size: 200px;
+
+}
