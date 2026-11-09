@@ -1,26 +1,24 @@
 .site_global {
     width: 900px;
-<<<<<<< HEAD
     height: 1000px;
     margin: 0 auto;
-    background-color: rgb(218, 24, 137);
-=======
-    height: 1500px;
-    margin: 0 auto;
-    background-color: bisque;
->>>>>>> 50bc04f6608d680330086dc15513c89dd2185d7c
+    background-color: white;
+    border-top: 14px solid #4169b0;
 }
 
-/* Header */
+/* Header et css commun*/
 
 .header {
     flex-direction: row;
     padding: 15px;
-    height: 150px;
+    height: 80px;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
 }
 
 .nom_site h1 {
-    color: red;
+    color: #4169b0;
     font-size: 50px;
 }
 
@@ -28,23 +26,32 @@
     display: flex;
     flex-direction: row;
     gap: 20px;
-    justify-content: right;
-    justify-content: baseline;
+    
 }
 
 
 .page_du_site h2 {
-    font-size: 16px;
+    font-size: 17px;
     margin: 0;
+ }
 
+.ligne_separatrice{
+width: 900px;
+height: 3px;
+background-color: #4169b0;
 }
+  
 
-/* Milieu */
+
+
+
+/* Milieu de la page index */
 
 .milieu_du_site {
-    background-color: lightyellow;
+    background-color: rgb(255, 255, 255);
     padding: 30px;
     height: 450px;
+    padding: 1px; /* pour que la boite s'approche du haut et du bas */
 }
 
 .contenu_accueil {
@@ -55,19 +62,23 @@
     background-color: lightblue;
     margin-top: 20px;
     height: 400px;
+    padding: 3px;
+    align-items: flex-start; /* pour mettre le texte en haut à gauche */
 }
+
 
 .texte_accueil {
     width: 450px;
 }
 
 .texte_accueil h2 {
-    color: red;
-    font-size: 30px;
+    font-size: 50px;
+    color: #4169b0;
+    margin: 0;
 }
 
 .texte_accueil h3 {
-    color: purple;
+    color: black;
     font-size: 22px;
 }
 
@@ -83,7 +94,7 @@
 }
 
 .bouton {
-    background-color: hotpink;
+    background-color: #4169b0;
     padding: 15px;
     color: white;
     text-decoration: none;
@@ -94,7 +105,7 @@
     background-color: red;
 }
 
-/* Bas du site */
+/* Bas de la page index */
 
 .bas_du_site {
     background-color: lightpink;
@@ -143,18 +154,5 @@
     color: blue;
 }
 
-.timer {
-    width: 100px;
-    height: 100px;
-}
 
-.timer2 {
-    font-size: 200px;
-
-<<<<<<< HEAD
-}
-
-/* isbvaidhsaoidjsadsaidaôsa */
-=======
-}
->>>>>>> 50bc04f6608d680330086dc15513c89dd2185d7c
+/* pied du site et css commnun*/
