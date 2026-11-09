@@ -87,10 +87,12 @@ background-color: #4169b0;
     line-height: 28px;
 }
 
-.image_accueil img {
+.image_accueil {
     width: 400px;
     height: 300px;
-    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .bouton {
@@ -156,3 +158,4 @@ background-color: #4169b0;
 
 
 /* pied du site et css commnun*/
+
