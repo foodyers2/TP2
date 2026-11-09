@@ -1,8 +1,14 @@
 .site_global {
     width: 900px;
+<<<<<<< HEAD
     height: 1000px;
     margin: 0 auto;
     background-color: rgb(218, 24, 137);
+=======
+    height: 1500px;
+    margin: 0 auto;
+    background-color: bisque;
+>>>>>>> 50bc04f6608d680330086dc15513c89dd2185d7c
 }
 
 /* Header */
@@ -145,6 +151,10 @@
 .timer2 {
     font-size: 200px;
 
+<<<<<<< HEAD
 }
 
 /* isbvaidhsaoidjsadsaidaôsa */
+=======
+}
+>>>>>>> 50bc04f6608d680330086dc15513c89dd2185d7c

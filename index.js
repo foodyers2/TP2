@@ -1,1 +1,0 @@
-let seconds = 0
