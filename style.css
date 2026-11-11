@@ -1,9 +1,17 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
 .site_global {
     width: 900px;
     height: 1000px;
     margin: 0 auto;
     background-color: white;
-    border-top: 14px solid #4169b0; 
+    border-top: 14px solid #4169b0;
 }
 
 
@@ -11,11 +19,12 @@
 
 .header {
     flex-direction: row;
-    padding: 15px;
+    padding: 5px;
     height: 80px;
-    display: flex; 
-    justify-content: space-between; 
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    padding-bottom: 0px;
 }
 
 .nom_site h1 {
@@ -26,22 +35,49 @@
 .page_du_site {
     display: flex;
     flex-direction: row;
-    gap: 20px;
-    
+    gap: 15px;
+    margin-top: 15px;
 }
 
 
-.page_du_site h2 {
+.page_du_site a {
+    text-decoration: none;
     font-size: 17px;
     margin: 0;
- }
-
-.ligne_separatrice{
-width: 900px;
-height: 3px;
-background-color: #4169b0;
+    color: #000000;
 }
-  
+
+.page_du_site a:hover {
+    color: #4169b0;
+    font-size: 23px;
+    cursor: pointer;
+    text-align: row;
+}
+
+/* 
+Je la fait pour le h2 aussi, car dans mon htlm acceuil n'est pas un a */
+
+.page_du_site h2 {
+    text-decoration: none;
+    font-size: 17px;
+    margin: 0;
+    color: #000000;
+}
+
+.page_du_site h2:hover {
+    color: #4169b0;
+    font-size: 23px;
+    cursor: pointer;
+    text-align: row;
+}
+
+/*-------------------------------------------------------------------------*/
+.ligne_separatrice {
+    width: 900px;
+    height: 3px;
+    background-color: #4169b0;
+}
+
 
 
 
@@ -51,7 +87,8 @@ background-color: #4169b0;
     background-color: rgb(255, 255, 255);
     padding: 30px;
     height: 450px;
-    padding: 1px; /* pour que la boite s'approche du haut et du bas */
+    padding: 1px;
+    /* pour que la boite s'approche du haut et du bas */
 }
 
 .contenu_accueil {
@@ -62,8 +99,9 @@ background-color: #4169b0;
     background-color: lightblue;
     margin-top: 20px;
     height: 400px;
-    padding: 3px;
-    align-items: flex-start; /* pour mettre le texte en haut à gauche */
+    padding: 10px;
+    align-items: flex-start;
+    /* pour mettre le texte en haut à gauche */
 }
 
 
@@ -72,7 +110,7 @@ background-color: #4169b0;
 }
 
 .texte_accueil h2 {
-    font-size: 50px;
+    font-size: 42px;
     color: #4169b0;
     margin: 0;
 }
@@ -83,9 +121,35 @@ background-color: #4169b0;
 }
 
 .text1 {
+    text-align: justify;
     font-size: 18px;
     line-height: 28px;
 }
+
+.bouton_histoire {
+    display: flex;
+    width: 180px;
+    justify-content: center;
+    color: white;
+    border: solid 4px #fcfcfc;
+    background-color: #4169b0;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 50px;
+
+}
+
+bouton_histoire:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+bouton_histoire a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
 /* --------------------section cube 3d apris grace à une video de "Coding Artist" -------------------------------- */
 .image_accueil {
     width: 400px;
@@ -95,106 +159,108 @@ background-color: #4169b0;
     align-items: center;
     perspective: 800px;
     align-self: center;
+    margin-top: 20px;
 }
 
-.cube{
-width: 200px;
-height: 200px;
-position: absolute;
-transform-style: preserve-3d;
+.cube {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    transform-style: preserve-3d;
 }
 
-.face{
-width: 200px;
-height: 200px;
-position: absolute;
-border: 3px solid rgb(252, 252, 252);
-background-color: #416ab0;
-opacity: 0.95;
-box-sizing: border-box;
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-grid-template-rows:repeat(3, 1fr);
-gap: 4px;
+.face {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border: 3px solid rgb(252, 252, 252);
+    background-color: #416ab0;
+    opacity: 0.95;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 4px;
 
 }
 
-.avant{
-transform: translateZ(100px);
-background-color: yellow;
+.avant {
+    transform: translateZ(100px);
+    background-color: yellow;
 }
 
-.arriere{
-transform: rotateY(180deg) translateZ(100px);
-background-color:blue ;
-} 
-
-.droite{
-transform: rotateY(90deg) translateZ(100px);
-background-color: orange;
+.arriere {
+    transform: rotateY(180deg) translateZ(100px);
+    background-color: blue;
 }
 
-.gauche{
-transform: rotateY(-90deg) translateZ(100px);    
-background-color: red;
+.droite {
+    transform: rotateY(90deg) translateZ(100px);
+    background-color: orange;
 }
 
-.haut{
-transform: rotateX(90deg) translateZ(100px);
-background-color: green;
+.gauche {
+    transform: rotateY(-90deg) translateZ(100px);
+    background-color: red;
 }
 
-.bas{
-transform: rotateX(-90deg) translateZ(100px);
+.haut {
+    transform: rotateX(90deg) translateZ(100px);
+    background-color: green;
+}
+
+.bas {
+    transform: rotateX(-90deg) translateZ(100px);
 }
 
 .animation_cube {
     animation: tourner 8s infinite linear;
 }
 
-@keyframes tourner{
-    0%{
+@keyframes tourner {
+    0% {
         transform: translateY(0) rotateX(0deg) rotateY(0deg);
     }
 
-    50%{
+    50% {
         transform: translateY(-35px) rotateX(180deg) rotateY(180deg);
     }
 
-    100%{
+    100% {
         transform: translateY(0) rotateX(360deg) rotateY(360deg);
     }
 }
 
-/* -------------------Fin de la section cube 3d apris grace à une video de "Coding Artist" --------------- */ 
-
-
-.bouton {
-    background-color: #4169b0;
-    padding: 15px;
-    color: white;
-    text-decoration: none;
-    margin-top: 20px;
-}
-
-.bouton:hover {
-    background-color: red;
-}
-
+/* -------------------Fin de la section cube 3d apris grace à une video de "Coding Artist" --------------- */
 
 
 
 /* Bas de la page index */
 
 .bas_du_site {
-    background-color: lightpink;
+    background-color: white;
     padding: 30px;
     height: 350px;
+    margin-top: 0px;
+    padding: 0px;
+}
+
+.div_séparateur {
+    height: 35px;
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    background-color:#e8eefa;;
+    margin-bottom: 20px;
 }
 
 .bas_du_site h2 {
     color: darkblue;
     font-size: 28px;
+    text-align: center;
+    margin-top: 0;
 }
 
 .les_blocs {
@@ -203,38 +269,29 @@ transform: rotateX(-90deg) translateZ(100px);
     justify-content: space-between;
 }
 
-.bloc1 {
-    width: 275px;
-    padding: 20px;
-    background-color: lightgreen;
-}
-
-.bloc2 {
-    width: 275px;
-    padding: 20px;
-    background-color: lightcoral;
-}
-
-.bloc3 {
-    width: 275px;
-    padding: 20px;
-    background-color: plum;
+.bloc1, .bloc2, .bloc3 {
+    width: 280px;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #4169b0;
 }
 
 .les_blocs h3 {
-    font-size: 22px;
+    font-size: 30px;
+    margin: 5px;
 }
 
 .les_blocs p {
     font-size: 16px;
+    margin: 5px;
 }
 
 .les_blocs a {
-    color: blue;
+    color: #4169b0;
+    justify-self:left;
 }
 
 
 
 
 /* pied du site et css commnun*/
-
