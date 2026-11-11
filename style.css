@@ -8,9 +8,9 @@ a {
 
 .site_global {
     width: 900px;
-    height: 1000px;
+    height: 800px;
     margin: 0 auto;
-    background-color: white;
+    background-color: lightblue;
     border-top: 14px solid #4169b0;
 }
 
@@ -84,7 +84,7 @@ Je la fait pour le h2 aussi, car dans mon htlm acceuil n'est pas un a */
 /* Milieu de la page index */
 
 .milieu_du_site {
-    background-color: rgb(255, 255, 255);
+    background-color: lightblue;
     padding: 30px;
     height: 450px;
     padding: 1px;
@@ -100,8 +100,7 @@ Je la fait pour le h2 aussi, car dans mon htlm acceuil n'est pas un a */
     margin-top: 20px;
     height: 400px;
     padding: 10px;
-    align-items: flex-start;
-    /* pour mettre le texte en haut à gauche */
+    align-items: flex-start; /* pour mettre le texte en haut à gauche */
 }
 
 
@@ -139,21 +138,24 @@ Je la fait pour le h2 aussi, car dans mon htlm acceuil n'est pas un a */
 
 }
 
-bouton_histoire:hover {
-    background-color: red;
+.bouton_histoire:hover {
     cursor: pointer;
+    color: #4169b0;
+    background-color: #cb1cd1;
+    font-size: 20px;
 }
 
-bouton_histoire a {
+.bouton_histoire a {
     text-decoration: none;
     color: white;
     font-size: 18px;
 }
 
+
 /* --------------------section cube 3d apris grace à une video de "Coding Artist" -------------------------------- */
 .image_accueil {
     width: 400px;
-    height: 300px;
+    height: 900px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -223,7 +225,7 @@ bouton_histoire a {
     }
 
     50% {
-        transform: translateY(-35px) rotateX(180deg) rotateY(180deg);
+        transform: translateY(-200px) rotateX(180deg) rotateY(180deg);
     }
 
     100% {
@@ -238,10 +240,10 @@ bouton_histoire a {
 /* Bas de la page index */
 
 .bas_du_site {
-    background-color: white;
+    background-color: lightblue;
     padding: 30px;
     height: 350px;
-    margin-top: 0px;
+    margin-top: 50px;
     padding: 0px;
 }
 
@@ -257,7 +259,7 @@ bouton_histoire a {
 }
 
 .bas_du_site h2 {
-    color: darkblue;
+    color: rgb(10, 0, 66);
     font-size: 28px;
     text-align: center;
     margin-top: 0;
@@ -274,6 +276,7 @@ bouton_histoire a {
     box-sizing: border-box;
     background-color: rgb(255, 255, 255);
     border: 2px solid #4169b0;
+    border-radius: 10px;
 }
 
 .les_blocs h3 {
