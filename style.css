@@ -3,8 +3,9 @@
     height: 1000px;
     margin: 0 auto;
     background-color: white;
-    border-top: 14px solid #4169b0;
+    border-top: 14px solid #4169b0; 
 }
+
 
 /* Header et css commun*/
 
@@ -41,7 +42,6 @@ height: 3px;
 background-color: #4169b0;
 }
   
-
 
 
 
@@ -86,14 +86,78 @@ background-color: #4169b0;
     font-size: 18px;
     line-height: 28px;
 }
-
+/* --------------------section cube 3d apris grace à une video de "Coding Artist" -------------------------------- */
 .image_accueil {
     width: 400px;
     height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
+    perspective: 800px;
+    align-self: center;
 }
+
+.cube{
+width: 200px;
+height: 200px;
+position: absolute;
+transform-style: preserve-3d;
+}
+
+.face{
+width: 200px;
+height: 200px;
+position: absolute;
+border: 3px solid rgb(252, 252, 252);
+background-color: #416ab0;
+opacity: 0.95;
+box-sizing: border-box;
+}
+
+.avant{
+transform: translateZ(100px);
+}
+
+.arriere{
+transform: rotateY(180deg) translateZ(100px);
+} 
+
+.droite{
+transform: rotateY(90deg) translateZ(100px);
+}
+
+.gauche{
+transform: rotateY(-90deg) translateZ(100px);    
+}
+
+.haut{
+transform: rotateX(90deg) translateZ(100px);
+}
+
+.bas{
+transform: rotateX(-90deg) translateZ(100px);
+}
+
+.animation_cube {
+    animation: tourner 8s infinite linear;
+}
+
+@keyframes tourner{
+    0%{
+        transform: translateY(0) rotateX(0deg) rotateY(0deg);
+    }
+
+    50%{
+        transform: translateY(-35px) rotateX(180deg) rotateY(180deg);
+    }
+
+    100%{
+        transform: translateY(0) rotateX(360deg) rotateY(360deg);
+    }
+}
+
+/* -------------------Fin de la section cube 3d apris grace à une video de "Coding Artist" --------------- */ 
+
 
 .bouton {
     background-color: #4169b0;
@@ -106,6 +170,9 @@ background-color: #4169b0;
 .bouton:hover {
     background-color: red;
 }
+
+
+
 
 /* Bas de la page index */
 
@@ -155,6 +222,8 @@ background-color: #4169b0;
 .les_blocs a {
     color: blue;
 }
+
+
 
 
 /* pied du site et css commnun*/
