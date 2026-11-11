@@ -112,26 +112,36 @@ border: 3px solid rgb(252, 252, 252);
 background-color: #416ab0;
 opacity: 0.95;
 box-sizing: border-box;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows:repeat(3, 1fr);
+gap: 4px;
+
 }
 
 .avant{
 transform: translateZ(100px);
+background-color: yellow;
 }
 
 .arriere{
 transform: rotateY(180deg) translateZ(100px);
+background-color:blue ;
 } 
 
 .droite{
 transform: rotateY(90deg) translateZ(100px);
+background-color: orange;
 }
 
 .gauche{
 transform: rotateY(-90deg) translateZ(100px);    
+background-color: red;
 }
 
 .haut{
 transform: rotateX(90deg) translateZ(100px);
+background-color: green;
 }
 
 .bas{
