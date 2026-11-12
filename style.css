@@ -613,5 +613,9 @@ Je la fait pour le h2 aussi, car dans mon htlm acceuil n'est pas un a */
     margin: 0;
 }
 
+.photo_cube .img_dezoom {
+    object-fit: contain; /* aide à ce que l'image ne soit pas coupée  */
+    background-color: #ffffff;
+}
 
 /* <------------------------------Fin cubes.html-------------------------------------------> */
