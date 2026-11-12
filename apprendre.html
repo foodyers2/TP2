@@ -9,8 +9,19 @@
 </head>
 
 <body>
-    <div class="site_global_apprendre">
+    <!DOCTYPE html>
+<html lang="fr">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cubix - Apprendre</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="site_global_apprendre">
 
         <div class="header">
             <div class="nom_site">
@@ -19,52 +30,81 @@
 
             <div class="page_du_site">
                 <h2 class="lien_acceuil"><a href="index.html">Accueil</a></h2> <br>
-                <!-- Ici Histoire n'a plus de balise <a> car on est déjà sur la page -->
-                <h2 class="lien_histoire">Histoire</h2> <br>
+                <h2 class="lien_histoire"><a href="histoire.html">Histoire</a></h2> <br>
                 <h2 class="lien_diffrent_cubes"><a href="cubes.html">Différents cubes</a></h2>
-                <h2 class="lien_apprendre"><a href="apprendre.html">Apprendre</a></h2>
+                <!-- Ici Apprendre n'a plus de balise <a> car on est déjà sur la page -->
+                <h2 class="lien_apprendre">Apprendre</h2>
                 <h2 class="lien_algorithmes"><a href="algorithmes.html">Algorithmes</a></h2>
                 <h2 class="lien_entraînement"><a href="entraînement.html">Entraînement</a></h2>
             </div>
         </div>
 
-        <div class="ligne_separatrice"></div>
+        <div class="ligne_separatrice_apprendre"></div>
 
-        <div class="milieu_page_histoire">
-            
-            <h2 class="titre_histoire">L'histoire du Rubik's Cube</h2>
-            
-            <p class="texte_intro_histoire">
-                Inventé en 1974 par le professeur d'architecture hongrois Ernő Rubik, le cube était au départ 
-                un outil pédagogique pour ses étudiants. Il a fallu plus d'un mois à son créateur pour 
-                résoudre son propre casse-tête la toute première fois !
+        <div class="milieu_page_apprendre">
+
+            <h2 class="titre_apprendre">Apprendre à résoudre un cube</h2>
+
+            <p class="texte_intro_apprendre">
+                Suis ces étapes une par une et tu pourras résoudre ton premier cube très bientôt.
             </p>
 
-            <!-- La bannière bleue claire de ta maquette Figma -->
-            <div class="Titre_dates">
-                <h3>Quelques dates importantes</h3>
+            <div class="Titre_methode">
+                <h3>Les étapes pour débuter</h3>
             </div>
 
-            <!-- Les 3 colonnes -->
-            <div class="les_dates">
-                <div class="date_bloc">
-                    <h4 class="annee">1974</h4>
-                    <h5 class="sous_titre">La création</h5>
-                    <p>Ernő Rubik crée le premier prototype en bois pour aider ses étudiants à comprendre la géométrie en 3D.</p>
+            <div class="contenu_apprendre">
+
+                <!-- Colonne de gauche : les 3 étapes -->
+                <div class="colonne_etapes">
+
+                    <div class="carte_etape">
+                        <h4 class="nom_etape">1. La croix blanche</h4>
+                        <p class="texte_etape">Place les 4 arêtes blanches autour du centre blanc, alignées avec les centres voisins.</p>
+                    </div>
+
+                    <div class="carte_etape">
+                        <h4 class="nom_etape">2. Les coins</h4>
+                        <p class="texte_etape">Insère les 4 coins blancs pour finir la première couche, puis place les arêtes du milieu.</p>
+                    </div>
+
+                    <div class="carte_etape">
+                        <h4 class="nom_etape">3. La dernière couche</h4>
+                        <p class="texte_etape">Fais la croix jaune, puis place et oriente les arêtes et les coins jaunes.</p>
+                    </div>
+
                 </div>
 
-                <div class="date_bloc">
-                    <h4 class="annee">1980</h4>
-                    <h5 class="sous_titre">Le succès</h5>
-                    <p>Le puzzle est licencié par Ideal Toy Corp, rebaptisé "Rubik's Cube" et devient un phénomène mondial.</p>
+                <!-- Colonne de droite : la photo et le bouton -->
+                <div class="colonne_photo">
+
+                    <div class="photo_tuto">
+                        <img src="images/cube.jpg">
+                    </div>
+
+                    <div class="bouton_etape">Étape suivante</div>
+
                 </div>
 
-                <div class="date_bloc">
-                    <h4 class="annee">Aujourd'hui</h4>
-                    <h5 class="sous_titre">Les nouveaux modèles</h5>
-                    <p>Des speedcubes magnétiques ultra-rapides ont remplacé les anciens mécanismes pour battre des records.</p>
-                </div>
             </div>
+
+        </div>
+
+        <div class="pied_page">
+            <div class="ligne_separatrice2_apprendre"></div>
+
+            <div class="pied_page_apprendre">
+                <p>CUBIX</p>
+                <p>PAGE 4/6</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="apprendre.js"></script>
+</body>
+
+</html>
 
 </body>
 
