@@ -53,32 +53,32 @@ a {
     color: #4169b0;
     font-size: 23px;
     cursor: pointer;
-   text-align: row;
+    text-align: row;
 }
 
 .lien_acceuil:hover {
-    cursor:cell;
+    cursor: cell;
 }
 
 .lien_histoire a:hover {
-    color:#ffe77c;
-    
+    color: #ffe77c;
+
 }
 
 .lien_diffrent_cubes a:hover {
-    color:#13cc41;
+    color: #13cc41;
 }
 
 .lien_apprendre a:hover {
-    color:#f54d4d;
+    color: #f54d4d;
 }
 
 .lien_algorithmes a:hover {
-    color:#ff6000;
+    color: #ff6000;
 }
 
 .lien_entraînement a:hover {
-    color:#fcfcfc;
+    color: #fcfcfc;
 }
 
 /* 
@@ -123,7 +123,8 @@ Je la fait pour le h2 aussi, car dans mon htlm acceuil n'est pas un a */
     margin-top: 20px;
     height: 400px;
     padding: 10px;
-    align-items: flex-start; /* pour mettre le texte en haut à gauche */
+    align-items: flex-start;
+    /* pour mettre le texte en haut à gauche */
 }
 
 
@@ -276,7 +277,8 @@ Je la fait pour le h2 aussi, car dans mon htlm acceuil n'est pas un a */
     justify-content: center;
     align-items: center;
     padding-top: 20px;
-    background-color:#e8eefa;;
+    background-color: #e8eefa;
+    ;
     margin-bottom: 20px;
 }
 
@@ -293,7 +295,9 @@ Je la fait pour le h2 aussi, car dans mon htlm acceuil n'est pas un a */
     justify-content: space-between;
 }
 
-.bloc1, .bloc2, .bloc3 {
+.bloc1,
+.bloc2,
+.bloc3 {
     width: 280px;
     box-sizing: border-box;
     background-color: rgb(255, 255, 255);
@@ -301,16 +305,17 @@ Je la fait pour le h2 aussi, car dans mon htlm acceuil n'est pas un a */
     border-radius: 10px;
 }
 
-.bloc1{
-background-color: #feed9f;
+.bloc1 {
+    background-color: #feed9f;
 
 }
 
-.bloc2{
-background-color: #6de48b;}
+.bloc2 {
+    background-color: #6de48b;
+}
 
-.bloc3{
-background-color: #f56767;
+.bloc3 {
+    background-color: #f56767;
 }
 
 .les_blocs h3 {
@@ -325,13 +330,13 @@ background-color: #f56767;
 
 .les_blocs a {
     color: #4169b0;
-    justify-self:left;
+    justify-self: left;
 }
 
 .bas_du_site a:after {
- content: " ->";
-/* ------------------------pour metre les fleches--------------------------- */
- }
+    content: " ->";
+    /* ------------------------pour metre les fleches--------------------------- */
+}
 
 /* pied du site et css commnun*/
 .ligne_separatrice2 {
@@ -341,9 +346,9 @@ background-color: #f56767;
     background-color: #4169b0;
     margin-top: 50px;
     margin-bottom: 0px;
- }
+}
 
-.page_actuelle{
+.page_actuelle {
     display: flex;
 
     margin-top: 20px;
@@ -356,6 +361,7 @@ background-color: #f56767;
     color: #000000;
     margin: 0;
 }
+
 /* fin du css de la page index */
 
 
@@ -450,6 +456,7 @@ background-color: #f56767;
     font-size: 15px;
     margin: 0;
 }
+
 /*  -----------------------------pied de page histoire --------------- */
 .les_photos {
     display: flex;
@@ -458,7 +465,8 @@ background-color: #f56767;
     margin-top: 10px;
 }
 
-.bloc_photo1, .bloc_photo2 {
+.bloc_photo1,
+.bloc_photo2 {
     display: flex;
     align-items: center;
     width: 410px;
@@ -466,12 +474,14 @@ background-color: #f56767;
     box-sizing: border-box;
 }
 
-.bloc_photo1 img, .bloc_photo2 img { 
-width: 100%; /* pour que l'image prenne toute la largeur du bloc */
+.bloc_photo1 img,
+.bloc_photo2 img {
+    width: 100%;
+    /* pour que l'image prenne toute la largeur du bloc */
 }
 
 
-     /* Pied de page de la page histoire pied et déja mis plus haut. */
+/* Pied de page de la page histoire pied et déja mis plus haut. */
 .ligne_separatrice2_histoire {
     display: flex;
     width: 900px;
@@ -481,7 +491,7 @@ width: 100%; /* pour que l'image prenne toute la largeur du bloc */
     margin-bottom: 0px;
 }
 
-.page_actuelle{
+.page_actuelle {
     display: flex;
     justify-content: flex-end;
     margin-top: 30px;
@@ -493,11 +503,115 @@ width: 100%; /* pour que l'image prenne toute la largeur du bloc */
     color: #000000;
     margin: 0;
 }
+
 /* <------------------------------Fin histoire.html-------------------------------------------> */
 
 
 
+/* ----------------------------début cubes.html-------------------------------------------> */
+/* <------------------------------Début cubes.html-------------------------------------------> */
+
+.site_global_cubes {
+    width: 900px;
+    height: 920px;
+    margin: 0 auto;
+    background-color: #f1fdf3;
+    border-top: 14px solid #13cc41;
+}
+/* Header : .header, .nom_site et .page_du_site sont déja mis plus haut.
+   Ici on change juste la couleur vert  */
+
+.page_du_site .lien_diffrent_cubes {
+    color: #13cc41;
+}
+
+.lien_diffrent_cubes:hover {
+    cursor: cell;
+}
+
+.ligne_separatrice_cubes {
+    width: 900px;
+    height: 3px;
+    background-color: #13cc41;
+}
+
+/*------- Milieu de la page cubes------- */
+
+.milieu_page_cubes {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    height: 660px;
+}
+
+.titre_cubes {
+    font-size: 42px;
+    color: #13cc41;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.texte_intro_cubes {
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 30px;
+}
 
 
+.diffrent_cubes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 30px;
+}
+
+.carte_cube {
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    height: 220px;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #9de3b0;
+}
+
+.photo_cube {
+    display: flex;
+    width: 238px;
+    height: 120px;
+    box-sizing: border-box;
+    background-color: #e4e6e8;
+    border: 1px solid #9de3b0;
+    overflow: hidden;
+}
+
+.photo_cube p {
+    display: flex;
+    width: 236px;
+    height: 118px;
+    margin: 0;
+    padding: 0;
+}
+
+.photo_cube img {
+    width: 236px;
+    height: 118px;
+    object-fit: cover;
+}
+
+.nom_cube {
+    font-size: 20px;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.texte_cube {
+    font-size: 14px;
+    margin: 0;
+}
 
 
+/* <------------------------------Fin cubes.html-------------------------------------------> */
