@@ -9,66 +9,61 @@
 </head>
 
 <body>
-    <!-----------Haut du site---------->
-    <div class="site_global">
-        <div class="ligne_bleu"></div>
+     <div class="site_global">
 
-        <div class="en_tete">
+
+        <div class="header">
             <div class="nom_site">
                 <h1>Cubix</h1>
             </div>
 
-            <nav class="page_du_site">
-                <a href="index.html">Accueil</a>
-                <a href="histoire.html" class="lien_actif">Histoire</a>
-                <a href="cubes.html">Les cubes</a>
-                <a href="apprendre.html">Apprendre</a>
-                <a href="algorithmes.html">Algorithmes</a>
-                <a href="entrainement.html">Entraînement</a>
-            </nav>
+            <div class="page_du_site">
+                <h2 class="lien_acceuil"><a href="index.html">Accueil</a></h2> <br>
+                <!-- Ici Histoire n'a plus de balise <a> car on est déjà sur la page -->
+                <h2 class="lien_histoire">Histoire</h2> <br>
+                <h2 class="lien_diffrent_cubes"><a href="cubes.html">Différents cubes</a></h2>
+                <h2 class="lien_apprendre"><a href="apprendre.html">Apprendre</a></h2>
+                <h2 class="lien_algorithmes"><a href="algorithmes.html">Algorithmes</a></h2>
+                <h2 class="lien_entraînement"><a href="entraînement.html">Entraînement</a></h2>
+            </div>
         </div>
-        </header>
 
-        <!-- Contenu principal -->
-        <main class="milieu_du_site">
+        <div class="ligne_separatrice"></div>
 
-            <h2>L'histoire du Rubik's Cube</h2>
+        <div class="milieu_page_histoire">
+            
+            <h2 class="titre_histoire">L'histoire du Rubik's Cube</h2>
+            
+            <p class="texte_intro_histoire">
+                Inventé en 1974 par le professeur d'architecture hongrois Ernő Rubik, le cube était au départ 
+                un outil pédagogique pour ses étudiants. Il a fallu plus d'un mois à son créateur pour 
+                résoudre son propre casse-tête la toute première fois !
+            </p>
 
-            <div class="contenu_histoire">
-                <div class="texte_histoire">
-                    <h3>La création du Rubik's Cube</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit. Sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua.
-                    </p>
+            <!-- La bannière bleue claire de ta maquette Figma -->
+            <div class="Titre_dates">
+                <h3>Quelques dates importantes</h3>
+            </div>
+
+            <!-- Les 3 colonnes -->
+            <div class="les_dates">
+                <div class="date_bloc">
+                    <h4 class="annee">1974</h4>
+                    <h5 class="sous_titre">La création</h5>
+                    <p>Ernő Rubik crée le premier prototype en bois pour aider ses étudiants à comprendre la géométrie en 3D.</p>
                 </div>
-                <!----------Milieu du site------------->
-                <div class="ligne_separatrice"></div>
-                <div class="date1">
-                    <h1></h1>
-                    <h5></h5>
-                    <p></p>
+
+                <div class="date_bloc">
+                    <h4 class="annee">1980</h4>
+                    <h5 class="sous_titre">Le succès</h5>
+                    <p>Le puzzle est licencié par Ideal Toy Corp, rebaptisé "Rubik's Cube" et devient un phénomène mondial.</p>
                 </div>
-                <div class="date2">
-                    <h1></h1>
-                    <h5></h5>
-                    <p></p>
+
+                <div class="date_bloc">
+                    <h4 class="annee">Aujourd'hui</h4>
+                    <h5 class="sous_titre">Les nouveaux modèles</h5>
+                    <p>Des speedcubes magnétiques ultra-rapides ont remplacé les anciens mécanismes pour battre des records.</p>
                 </div>
-                <div class="date3">
-                    <h1></h1>
-                    <h5></h5>
-                    <p></p>
-                </div>
-                <!------------Bas du site-------------->
-                <div class="photo1"></div>
-
-
-
-
-
-
-
             </div>
 </body>
 

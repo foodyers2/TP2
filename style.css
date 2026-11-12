@@ -6,6 +6,8 @@ a {
     text-decoration: none;
 }
 
+/* Début css de la page index */
+
 .site_global {
     width: 900px;
     height: 800px;
@@ -51,7 +53,32 @@ a {
     color: #4169b0;
     font-size: 23px;
     cursor: pointer;
-    text-align: row;
+   text-align: row;
+}
+
+.lien_acceuil:hover {
+    cursor:cell;
+}
+
+.lien_histoire a:hover {
+    color:#ffe77c;
+    
+}
+
+.lien_diffrent_cubes a:hover {
+    color:#13cc41;
+}
+
+.lien_apprendre a:hover {
+    color:#f54d4d;
+}
+
+.lien_algorithmes a:hover {
+    color:#ff6000;
+}
+
+.lien_entraînement a:hover {
+    color:#fcfcfc;
 }
 
 /* 
@@ -59,17 +86,13 @@ Je la fait pour le h2 aussi, car dans mon htlm acceuil n'est pas un a */
 
 .page_du_site h2 {
     text-decoration: none;
-    font-size: 17px;
+    font-size: 23px;
     margin: 0;
-    color: #000000;
+    color: #4169b0;
 }
 
-.page_du_site h2:hover {
-    color: #4169b0;
-    font-size: 23px;
-    cursor: pointer;
-    text-align: row;
-}
+
+
 
 /*-------------------------------------------------------------------------*/
 .ligne_separatrice {
@@ -81,7 +104,7 @@ Je la fait pour le h2 aussi, car dans mon htlm acceuil n'est pas un a */
 
 
 
-/* Milieu de la page index */
+/*------- Milieu de la page index------- */
 
 .milieu_du_site {
     background-color: lightblue;
@@ -155,13 +178,12 @@ Je la fait pour le h2 aussi, car dans mon htlm acceuil n'est pas un a */
 /* --------------------section cube 3d apris grace à une video de "Coding Artist" -------------------------------- */
 .image_accueil {
     width: 400px;
-    height: 900px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
     perspective: 800px;
-    align-self: center;
-    margin-top: 20px;
+    margin-top: 80px;
 }
 
 .cube {
@@ -225,7 +247,7 @@ Je la fait pour le h2 aussi, car dans mon htlm acceuil n'est pas un a */
     }
 
     50% {
-        transform: translateY(-200px) rotateX(180deg) rotateY(180deg);
+        transform: translateY(-150px) rotateX(180deg) rotateY(180deg);
     }
 
     100% {
@@ -279,6 +301,18 @@ Je la fait pour le h2 aussi, car dans mon htlm acceuil n'est pas un a */
     border-radius: 10px;
 }
 
+.bloc1{
+background-color: #feed9f;
+
+}
+
+.bloc2{
+background-color: #6de48b;}
+
+.bloc3{
+background-color: #f56767;
+}
+
 .les_blocs h3 {
     font-size: 30px;
     margin: 5px;
@@ -294,7 +328,199 @@ Je la fait pour le h2 aussi, car dans mon htlm acceuil n'est pas un a */
     justify-self:left;
 }
 
-
-
+.bas_du_site a:after {
+ content: " ->";
+/* ------------------------pour metre les fleches--------------------------- */
+ }
 
 /* pied du site et css commnun*/
+.ligne_separatrice2 {
+    display: flex;
+    width: 900px;
+    height: 3px;
+    background-color: #4169b0;
+    margin-top: 50px;
+    margin-bottom: 0px;
+ }
+
+.page_actuelle{
+    display: flex;
+
+    margin-top: 20px;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+.page_actuelle h1 {
+    font-size: 20px;
+    color: #000000;
+    margin: 0;
+}
+/* fin du css de la page index */
+
+
+/* <------------------------------Début histoire-------------------------------------------> */
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Début css de la page index */
+
+.site_global {
+    width: 900px;
+    height: 800px;
+    margin: 0 auto;
+    background-color: lightblue;
+    border-top: 14px solid #4169b0;
+}
+
+
+/* Header et css commun*/
+
+.header {
+    flex-direction: row;
+    padding: 5px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0px;
+}
+
+.nom_site h1 {
+    color: #4169b0;
+    font-size: 50px;
+}
+
+.page_du_site {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+
+.page_du_site a {
+    text-decoration: none;
+    font-size: 17px;
+    margin: 0;
+    color: #000000;
+}
+
+.page_du_site a:hover {
+    color: #4169b0;
+    font-size: 23px;
+    cursor: pointer;
+   text-align: row;
+}
+
+.lien_acceuil:hover {
+    cursor:cell;
+}
+
+.lien_histoire a:hover {
+    color:#ffe77c;
+    
+}
+
+.lien_diffrent_cubes a:hover {
+    color:#13cc41;
+}
+
+.lien_apprendre a:hover {
+    color:#f54d4d;
+}
+
+.lien_algorithmes a:hover {
+    color:#ff6000;
+}
+
+.lien_entraînement a:hover {
+    color:#fcfcfc;
+}
+
+/* 
+Je la fait pour le h2 aussi, car dans mon htlm acceuil n'est pas un a */
+
+.page_du_site h2 {
+    text-decoration: none;
+    font-size: 23px;
+    margin: 0;
+    color: #4169b0;
+}
+
+.ligne_separatrice {
+    width: 900px;
+    height: 3px;
+    background-color: #4169b0;
+}
+
+/*------- Milieu de la page histoire------- */
+
+.contenu_page_histoire {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.titre_histoire {
+    font-size: 42px;
+    color: #4169b0;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+.texte_intro_histoire {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+/* titres de  "Quelques dates importantes" */
+.Titre_dates {
+    background-color: #e8eefa; 
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+.Titre_dates h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #000000;
+}
+
+/* Section des 3 colonnes */
+.les_dates {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.date_bloc {
+    width: 30%;
+}
+
+.date_bloc .annee {
+    color: #4169b0;
+    font-size: 24px;
+    margin: 0 0 10px 0;
+}
+
+.date_bloc .sous_titre {
+    font-size: 18px;
+    margin: 0 0 10px 0;
+}
+
+.date_bloc p {
+    font-size: 15px;
+    line-height: 24px;
+}
+
+
+
+
