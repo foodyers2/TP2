@@ -798,4 +798,171 @@ Je la fait pour le h2 aussi, car dans mon htlm acceuil n'est pas un a */
 
 /* ----------------------------------début entraînement.html-------------------------------------------> */
 
+/* ----------------------------début entraînement.html---------------------------- */
 
+.site_global_entrainement {
+    width: 900px;
+    min-height: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-top: 14px solid #4169b0;
+}
+
+/* .header, .nom_site et .page_du_site sont déjà dans style.css */
+
+.page_du_site .lien_actuel {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.lien_entraînement:hover {
+    cursor: cell;
+}
+
+.ligne_separatrice_entrainement {
+    width: 900px;
+    height: 3px;
+    background-color: #4169b0;
+}
+
+/* ------- Milieu de la page ------- */
+
+.milieu_page_entrainement {
+    padding: 30px;
+}
+
+.titre_entrainement {
+    font-size: 42px;
+    color: #4169b0;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.texte_intro_entrainement {
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.contenu_entrainement {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 30px;
+}
+
+.titre_carte {
+    font-size: 24px;
+    margin: 0;
+    color: #222222;
+}
+
+/* ------- Carte chrono (gauche) ------- */
+
+.carte_chrono {
+    width: 520px;
+    box-sizing: border-box;
+    padding: 25px;
+    background-color: #f7f8fa;
+    border: 1px solid #4169b0;
+}
+
+.melange {
+    margin-top: 25px;
+    padding: 22px 20px;
+    background-color: #eff0f2;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.affichage_chrono {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 84px;
+    font-weight: 700;
+    color: #2b2b2b;
+    font-variant-numeric: tabular-nums;
+}
+
+.affichage_chrono.en_cours {
+    color: #4169b0;
+}
+
+.boutons_chrono {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding-bottom: 60px;
+}
+
+.bouton_chrono {
+    width: 240px;
+    padding: 14px 16px;
+    background-color: #4169b0;
+    color: #ffffff;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.bouton_chrono:hover {
+    background-color: #2f5192;
+}
+
+.bouton_chrono:active {
+    transform: scale(0.98);
+}
+
+/* ------- Carte temps (droite) ------- */
+
+.carte_temps {
+    width: 320px;
+    box-sizing: border-box;
+    padding: 25px;
+    background-color: #e8eefa;
+    border: 1px solid #4169b0;
+}
+
+.texte_temps {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 20px 0 15px 0;
+}
+
+.stat_temps {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #4169b0;
+}
+
+.stat_temps h4 {
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 6px;
+}
+
+.stat_temps p {
+    font-size: 24px;
+    color: #4169b0;
+    margin: 0;
+    margin-bottom: 8px;
+    font-variant-numeric: tabular-nums;
+}
+
+/* ------- Pied de page ------- */
+
+.ligne_separatrice2_entrainement {
+    width: 900px;
+    height: 3px;
+    background-color: #4169b0;
+    margin-top: 40px;
+}
+
+/* .page_actuelle est déjà dans style.css */
+
+/* ----------------------------fin entraînement.html---------------------------- */

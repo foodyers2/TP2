@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
     <div class="site_global_entrainement">
 
         <div class="header">
@@ -29,66 +33,71 @@
 
         <div class="milieu_page_entrainement">
 
-            <h2 class="titre_entrainement">À toi de jouer !</h2>
+            <h2 class="titre_entrainement">Entraîne-toi avec le timer </h2>
 
             <p class="texte_intro_entrainement">
-                C'est le moment de mettre tes connaissances en pratique.
-                Entraîne-toi avec différents défis pour améliorer ta vitesse et tes compétences.
+                Mélange ton cube avec la suite de mouvements ci-dessous, puis lance le chrono
+                et résous-le le plus vite possible. Note ton meilleur temps !
+            </p>
             </p>
 
-            <div class="Titre_entrainement">
+            <div class="contenu_entrainement">
                 <h3>Les défis à relever</h3>
             </div>
 
-            <div class="les_defis">
+            <div class="carte_chrono">
 
-                <div class="carte_defi">
-                    <h4 class="nom_defi">Les mouvements</h4>
-                    <p class="texte_defi">
-                        Entraîne-toi à reconnaître les mouvements du Rubik's Cube.
-                        Apprends à distinguer R, L, U, D, F et B.
-                    </p>
+                <h3 class="titre_carte">Mélange du cube :</h3>
+
+                <div class="melange" id="melange">R U2 F' L D2 R' U</div>
+
+                <div class="affichage_chrono" id="chrono">00:00.00</div>
+
+                <div class="boutons_chrono">
+                    <button class="bouton_chrono" id="btn-demarrer" type="button">Démarrer</button>
+                    <button class="bouton_chrono" id="btn-recommencer" type="button">Recommencer</button>
                 </div>
-
-                <div class="carte_defi">
-                    <h4 class="nom_defi">La mémoire</h4>
-                    <span class="mouvements_entrainement">R U R' U'</span>
-                    <p class="texte_defi">
-                        Essaie de mémoriser cet algorithme et de le répéter sans regarder tes notes.
-                    </p>
-                </div>
-
-                <div class="carte_defi">
-                    <h4 class="nom_defi">Le défi du temps</h4>
-                    <p class="texte_defi">
-                        Mélange ton cube et essaie de le résoudre le plus rapidement possible.
-                        Note ton meilleur temps !
-                    </p>
-                </div>
-
             </div>
 
-            <div class="conseil_entrainement">
-                <h3>Notre conseil</h3>
-                <p>
-                    La régularité est la clé. Même quelques minutes de pratique chaque jour
-                    peuvent faire une grande différence !
+
+            <div class="carte_temps">
+                <h3 class="titre_carte">Mes temps</h3>
+
+                <p class="texte_temps">
+                    Tes résultats s'affichent ici. Arrête le chrono pour enregistrer un temps.
                 </p>
+
+                <div class="stat_temps">
+                    <h4>Meilleur temps</h4>
+                    <p id="meilleur">00:00</p>
+                </div>
+
+                <div class="stat_temps">
+                    <h4>Moyenne</h4>
+                    <p id="moyenne">00:00</p>
+                </div>
+
+                <div class="stat_temps">
+                    <h4>Dernier temps</h4>
+                    <p id="dernier">00:00</p>
+                </div>
             </div>
 
         </div>
+    </div>
 
-        <div class="pied_page">
-            <div class="ligne_separatrice2_entrainement"></div>
+    <div class="pied_page">
+        <div class="ligne_separatrice2_entrainement"></div>
 
-            <div class="page_actuelle">
-                <h1>PAGE 6/6</h1>
-            </div>
+        <div class="page_actuelle">
+            <h1>PAGE 6/6</h1>
         </div>
+    </div>
 
     </div>
 
     <script src="entrainement.js"></script>
-    
+
 </body>
+
 </html>
