@@ -966,3 +966,170 @@ Je la fait pour le h2 aussi, car dans mon htlm acceuil n'est pas un a */
 /* .page_actuelle est déjà dans style.css */
 
 /* ----------------------------fin entraînement.html---------------------------- */
+
+/* ----------------------------début algorithmes.html---------------------------- */
+
+.site_global_algorithmes {
+    width: 900px;
+    min-height: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-top: 14px solid #4169b0;
+}
+
+/* .header, .nom_site et .page_du_site sont déjà dans style.css */
+
+.page_du_site .lien_actuel {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.lien_algorithmes:hover {
+    cursor: cell;
+}
+
+.ligne_separatrice_algorithmes {
+    width: 900px;
+    height: 3px;
+    background-color: #4169b0;
+}
+
+/* ------- Milieu de la page ------- */
+
+.milieu_page_algorithmes {
+    padding: 30px;
+}
+
+.titre_algorithmes {
+    font-size: 42px;
+    color: #4169b0;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.texte_intro_algorithmes {
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.Titre_mouvements {
+    background-color: #e8eefa;
+    padding: 12px 15px;
+    margin-bottom: 30px;
+}
+
+.Titre_mouvements h3 {
+    margin: 0;
+    font-size: 22px;
+    color: #000000;
+}
+
+/* ------- Les 4 mouvement ------- */
+
+.les_mouvements {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.carte_mouvement {
+    width: 195px;
+    height: 150px;
+    box-sizing: border-box;
+    padding: 18px 20px;
+    background-color: #f0f2f8;
+    border: 1px solid #4169b0;
+}
+
+.carte_mouvement:hover {
+    background-color: #e8eefa;
+    cursor: pointer;
+}
+
+.haut_carte {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.lettre_mouvement {
+    font-size: 40px;
+    font-weight: 700;
+    color: #4169b0;
+}
+
+.nom_mouvement {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.texte_mouvement {
+    font-size: 15px;
+    line-height: 20px;
+    margin: 0;
+}
+
+/* ------- Exemple d'algorithme ------- */
+
+.bas_algorithmes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.colonne_exemple {
+    width: 500px;
+}
+
+.titre_exemple {
+    font-size: 30px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.boite_algorithme {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    padding: 22px 30px;
+    background-color: #e8eefa;
+    margin-bottom: 25px;
+}
+
+.lettre_algo {
+    font-size: 36px;
+    font-weight: 700;
+    color: #4169b0;
+}
+
+.texte_exemple {
+    font-size: 17px;
+    line-height: 26px;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+
+.bouton_animation:hover {
+    background-color: #2f5192;
+}
+
+/* ------- Pied de page ------- */
+
+.ligne_separatrice2_algorithmes {
+    width: 900px;
+    height: 3px;
+    background-color: #4169b0;
+    margin-top: 30px;
+}
+
+/* .page_actuelle est déjà dans style.css */
+
+/* ----------------------------fin algorithmes.html---------------------------- */
